@@ -1,0 +1,18 @@
+version: "3.2"
+services:
+  api:
+    build:
+      context: .
+      dockerfile: ./build/api/Dockerfile
+    depends_on:
+      - redis
+    environment:
+      - REDIS_HOST=redis
+    ports:
+      - "3000:3000"
+  redis:
+    build:
+      context: .
+      dockerfile: ./build/redis/Dockerfile
+    ports:
+      - "6379:6379"

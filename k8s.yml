@@ -1,0 +1,45 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: npr-db
+  labels:
+    app: npr-db
+spec:
+  type: LoadBalancer
+  selector:
+    app: npr-db
+  ports:
+    - port: 80
+      targetPort: 3000
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: npr-db
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: npr-db
+  template:
+    metadata:
+      labels:
+        app: npr-db
+    spec:
+      containers:
+      - name: npr-db-api
+        image: npr-db_api:latest
+        imagePullPolicy: Never
+        env:
+        - name: REDIS_HOST
+          value: localhost
+        - name: REDIS_PORT
+          value: "6379"
+        ports:
+        - containerPort: 3000
+      - name: npr-db-redis
+        image: npr-db_redis:latest
+        imagePullPolicy: Never
+        ports:
+          - containerPort: 6379
+      restartPolicy: Always

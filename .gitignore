@@ -1,0 +1,10 @@
+# Node.js
+*npm-debug.log
+node_modules
+
+# Dev tools
+.vscode
+
+# Testing
+.nyc_output
+test/coverage
