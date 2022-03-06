@@ -1,0 +1,8 @@
+build/
+k8s/
+test/
+*.spec.js
+api.yml
+docker-compose.yml
+k8s.yml
+.git/

@@ -28,8 +28,7 @@ spec:
     spec:
       containers:
       - name: npr-db-api
-        image: npr-db_api:latest
-        imagePullPolicy: Never
+        image: openpublicradio/npr-db-api:latest
         env:
         - name: REDIS_HOST
           value: localhost
@@ -38,8 +37,7 @@ spec:
         ports:
         - containerPort: 3000
       - name: npr-db-redis
-        image: npr-db_redis:latest
-        imagePullPolicy: Never
+        image: openpublicradio/npr-db-redis:latest
         ports:
           - containerPort: 6379
       restartPolicy: Always
