@@ -33,7 +33,7 @@ function transformLink (link) {
 }
 
 function wait (args) {
-  // wait a few  seconds, to avoid being throtted
+  // wait a few  seconds, to avoid being throttled
   console.info('[waiting]')
 
   return new Promise((resolve, reject) => {
