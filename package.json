@@ -2,8 +2,8 @@
   "private": true,
   "version": "5.0.0",
   "engines": {
-    "node": "~16.3.0",
-    "npm": "~8.3.0"
+    "node": "~22.2.0",
+    "npm": "~10.7.0"
   },
   "engine-strict": true,
   "scripts": {
@@ -12,17 +12,17 @@
     "stations:load": "node ./scripts/load-stations.js"
   },
   "dependencies": {
-    "fastify": "^3.25.3",
+    "fastify": "^4.27.0",
     "http-errors": "^2.0.0",
     "lodash": "^4.17.21",
     "redis": "^4.0.1"
   },
   "devDependencies": {
-    "axios": "^0.24.0",
-    "eslint": "^8.6.0",
-    "jest": "^27.4.5",
-    "pino-pretty": "^7.3.0",
-    "standard": "^16.0.4"
+    "axios": "^1.7.2",
+    "eslint": "^9.3.0",
+    "jest": "^29.7.0",
+    "pino-pretty": "^11.0.0",
+    "standard": "^17.1.0"
   },
   "jest": {
     "testEnvironment": "node",
