@@ -25,7 +25,10 @@ fastify.get('/stations/:id', async (request, reply) => {
 
 const start = async () => {
   try {
-    await fastify.listen(3000, '0.0.0.0')
+    await fastify.listen({
+      host: '0.0.0.0',
+      port: 3000
+    })
   } catch (err) {
     fastify.log.error(err)
     process.exit(1)
