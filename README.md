@@ -90,89 +90,89 @@ An API for querying data [NPR](http://npr.org) member station data.
       {
         "href": "https://wwno.secureallegiance.com/wwno/WebModule/Donate.aspx?P=WEBNPR&PAGETYPE=PLG&CHECK=0XXz7vbVFVxEIkmdxt0MhRiCxtaFReuS",
         "title": "Support WWNO",
-        "type_name": "pledge_page"
+        "type": "pledge_page"
       },
       {
         "href": "https://ondemand.npr.org/npr-mp4/donation/711_f3b9ec7a316accedafb5982512d96a4b.mp4",
         "title": "MEMBERSHIP EG #54 899",
-        "type_name": "station_pledge_audio"
+        "type": "station_pledge_audio"
       }
     ],
     "podcasts": [
       {
         "href": "https://wwno.drupal.publicbroadcasting.net/podcasts/88432/rss.xml",
         "title": "TriPod: New Orleans at 300",
-        "type_name": "podcast"
+        "type": "podcast"
       },
       {
         "href": "https://wwno.drupal.publicbroadcasting.net/podcasts/6095/rss.xml",
         "title": "Where Y'Eat",
-        "type_name": "podcast"
+        "type": "podcast"
       },
       {
         "href": "https://wwno.drupal.publicbroadcasting.net/podcasts/14246/rss.xml",
         "title": "Out to Lunch",
-        "type_name": "podcast"
+        "type": "podcast"
       },
       {
         "href": "https://www.omnycontent.com/d/playlist/8647406c-3cbf-4408-b64a-ac7d010d8c59/c7308012-d787-4b38-b5ab-accd015dc938/f1cd8481-1a71-4a5d-9f38-accd015eb8c5/podcast.rss",
         "title": "Louisiana Considered",
-        "type_name": "podcast"
+        "type": "podcast"
       },
       {
         "href": "https://feeds.feedburner.com/wwnobanned",
         "title": "Banned",
-        "type_name": "podcast"
+        "type": "podcast"
       },
       {
         "href": "https://feeds.podtrac.com/4S-hYvoS7-rh",
         "title": "WWNO's Le Show",
-        "type_name": "podcast"
+        "type": "podcast"
       },
       {
         "href": "https://wwno.drupal.publicbroadcasting.net/podcasts/6099/rss.xml",
         "title": "Inside The Arts",
-        "type_name": "podcast"
+        "type": "podcast"
       },
       {
         "href": "https://wwno.drupal.publicbroadcasting.net/podcasts/6101/rss.xml",
         "title": "Community Impact",
-        "type_name": "podcast"
+        "type": "podcast"
       },
       {
         "href": "https://wwno.drupal.publicbroadcasting.net/podcasts/3524/rss.xml",
         "title": "Louisiana Eats!",
-        "type_name": "podcast"
+        "type": "podcast"
       },
       {
         "href": "https://wwno.drupal.publicbroadcasting.net/podcasts/3573/rss.xml",
         "title": "All  Things New Orleans",
-        "type_name": "podcast"
+        "type": "podcast"
       },
       {
         "href": "https://wwno.drupal.publicbroadcasting.net/podcasts/6094/rss.xml",
         "title": "WWNO: Latest News",
-        "type_name": "podcast"
+        "type": "podcast"
       },
       {
         "href": "https://wwno.drupal.publicbroadcasting.net/podcasts/3557/rss.xml",
         "title": "The Reading Life",
-        "type_name": "podcast"
+        "type": "podcast"
       },
       {
         "href": "https://feeds.feedburner.com/liferaftpod",
         "title": "Life Raft",
-        "type_name": "podcast"
+        "type": "podcast"
       },
       {
         "href": "https://wwno.drupal.publicbroadcasting.net/podcasts/7089/rss.xml",
         "title": "Notes From New Orleans",
-        "type_name": "podcast"
+        "type": "podcast"
       },
       {
         "href": "https://wwno.drupal.publicbroadcasting.net/podcasts/151142/rss.xml",
         "title": "Sticky Wicket",
-        "type_name": "podcast"
+        "type": "podcast"
       }
     ],
     "streams": [
@@ -180,19 +180,19 @@ An API for querying data [NPR](http://npr.org) member station data.
         "href": "https://tektite.streamguys1.com:5145/wwnojazz",
         "is_primary_stream": false,
         "title": "Jazz WWNO: Jazz Music From New Orleans",
-        "type_name": "audio_mp_3_stream"
+        "type": "audio_mp3_stream"
       },
       {
         "href": "https://tektite.streamguys1.com:5145/wwnolive",
         "is_primary_stream": true,
         "title": "WWNO 89.9 FM | News, Culture & Music",
-        "type_name": "audio_mp_3_stream"
+        "type": "audio_mp3_stream"
       },
       {
         "href": "https://tektite.streamguys1.com:5145/wwnoclassical",
         "is_primary_stream": false,
         "title": "Classical 104.9",
-        "type_name": "audio_mp_3_stream"
+        "type": "audio_mp3_stream"
       }
     ]
   }

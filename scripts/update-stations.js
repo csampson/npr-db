@@ -26,21 +26,33 @@ function transformLink (link) {
   const result = omit(snakeCaseKeys(link), ['guid', 'type_id'])
 
   if ('type_name' in result) {
-    result.type_name = snakeCase(result.type_name)
+    let type
+
+    switch (result.type_name) {
+      case 'Audio MP3 Stream':
+        type = 'audio_mp3_stream'
+        break
+      default:
+        type = snakeCase(result.type_name)
+        break
+    }
+
+    delete result.type_name
+    result.type = type
   }
 
   return result
 }
 
 function wait (args) {
-  // wait a few  seconds, to avoid being throttled
+  // wait a few moments to avoid being throttled
   console.info('[waiting]')
 
   return new Promise((resolve, reject) => {
     setTimeout(() => {
       console.info('[resuming]')
       resolve(args)
-    }, 2000)
+    }, 500)
   })
 }
 
