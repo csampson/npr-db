@@ -9,7 +9,6 @@
   "scripts": {
     "start": "node ./app",
     "test": "standard && jest --coverage",
-    "stations:load": "node ./scripts/load-stations.js",
     "stations:update": "node ./scripts/update-stations.js"
   },
   "dependencies": {

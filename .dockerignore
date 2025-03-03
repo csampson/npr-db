@@ -1,4 +1,3 @@
-build/
 k8s/
 test/
 *.spec.js
