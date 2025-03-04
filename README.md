@@ -208,4 +208,4 @@ This will build the images for the API and database and make the application ava
 
 ## Testing
 
-Use `yarn test` to run unit tests.
+Use `npm test` to run unit tests.
