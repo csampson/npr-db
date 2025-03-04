@@ -1,6 +1,6 @@
 'use strict'
 
-const fastify = require('fastify')({ logger: 'info', ignoreTrailingSlash: true })
+const Fastify = require('fastify')({ logger: true, ignoreTrailingSlash: true })
 const createError = require('http-errors')
 
 const Database = require('./lib/database')
@@ -9,11 +9,11 @@ const Station = require('./models/station')
 const database = new Database()
 const station = new Station(database)
 
-fastify.get('/stations', (request, reply) => {
+Fastify.get('/stations', (request, reply) => {
   return station.all()
 })
 
-fastify.get('/stations/:id', async (request, reply) => {
+Fastify.get('/stations/:id', async (request, reply) => {
   const result = await station.fetch(request.params.id)
 
   if (!result) {
@@ -25,12 +25,12 @@ fastify.get('/stations/:id', async (request, reply) => {
 
 const start = async () => {
   try {
-    await fastify.listen({
+    await Fastify.listen({
       host: '0.0.0.0',
       port: 3000
     })
   } catch (err) {
-    fastify.log.error(err)
+    Fastify.log.error(err)
     process.exit(1)
   }
 }
